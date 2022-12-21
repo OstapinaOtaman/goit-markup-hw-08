@@ -18,11 +18,12 @@
 		<link rel="stylesheet" href="./css/main.min.css" />
 	</head>
 	<body>
-		<!-- <header class="header">
+		<header class="header">
 			<div class="container header__container">
 				<a class="logo__header link" href="./index.html"
 					><span class="logo-web logo">Web</span>Studio</a
 				>
+				<div class="tablet-nav">
 				<nav class="menu">
 					<ul class="menu__list list">
 						<li class="menu__item">
@@ -36,33 +37,97 @@
 						</li>
 					</ul>
 				</nav>
+				</div>
 				<ul class="header__contact list">
 					<li class="header__contact-item item">
 						<a class="contact__link link" href="mailto:info@devstudio.com"
-							><svg class="contact__icon" width="16" height="12">
+							><svg class="contact__icon" width="14" height="10">
 								<use href="./images/icons.svg#icon-envelope"></use></svg
 							>info@devstudio.com
 						</a>
 					</li>
 					<li class="header__contact-item item">
 						<a class="contact__link link" href="tel:+380961111111"
-							><svg class="contact__icon" width="10" height="16">
+							><svg class="contact__icon" width="10" height="14">
 								<use href="./images/icons.svg#icon-smartphone"></use></svg
 							>+38 096 111 11 11</a
 						>
 					</li>
 				</ul>
+				<button type="button" class="btn-open-menu" data-menu-open>
+					<svg class="open-btn-icon" width="40" height="40">
+						<use href="./images/icons.svg#icon-menu_btn"></use>
+					</svg>
+				</button>
 			</div>
-		</header> -->
+			<div class="mob-menu is-hidden" data-menu>
+				<div class="container">
+					<div class="mobile-top">
+						<button type="button" class="menu-close-btn" data-menu-close>
+							<svg class="icon-menu-close" width="40" height="40">
+								<use href="./images/icons.svg#icon-menu-close"></use>
+							</svg>
+						</button>
+						<nav class="menu-mobile">
+							<ul class="menu-mobile-list list">
+								<li class="menu-mobile-item">
+									<a class="menu-mob-link current link" href="./index.html"
+										>Студія</a
+									>
+								</li>
+								<li class="menu-mobile-item">
+									<a class="menu-mob-link link" href="./portfolio.html"
+										>Портфоліо</a
+									>
+								</li>
+								<li class="menu-mobile-item">
+									<a class="menu-mob-link link" href="#">Контакти</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="mobile-bottom">
+						<ul class="menu-mob-contact list">
+							<li class="menu-mob-contact-item item">
+								<a class="menu-mob-contact-link link" href="tel:+380961111111"
+									>+38 096 111 11 11</a
+								>
+							</li>
+							<li class="menu-mob-contact-item item">
+								<a
+									class="menu-mob-email-link link"
+									href="mailto:info@devstudio.com"
+									>info@devstudio.com</a
+								>
+							</li>
+						</ul>
+						<ul class="menu-soc-list list">
+							<li class="menu-soc-item">
+								<a class="menu-soc-link link" href="#">Instagram</a>
+							</li>
+							<li class="menu-soc-item">
+								<a class="menu-soc-link link" href="#">Twitter</a>
+							</li>
+							<li class="menu-soc-item">
+								<a class="menu-soc-link link" href="#">Facebook</a>
+							</li>
+							<li class="menu-soc-item">
+								<a class="menu-soc-link link" href="#">Linkedin</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
 		<main>
-			<!-- <section class="hero section">
+			<section class="hero section">
 				<div class="container hero__container">
 					<h1 class="hero__title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
 					<button data-modal-open type="button" class="hero__button">
 						Замовити послугу
 					</button>
 				</div>
-			</section> -->
+			</section>
 			<section class="advantages section">
 				<div class="container advantages__container">
 					<ul class="advantages__list list">
@@ -125,7 +190,7 @@
 								<img
 									src="./images/img-keybord.jpg"
 									alt="Набирання на клавіатурі"
-									width="370"
+									width="100%"
 									height="294"
 								/>
 								<h3 class="about-title-wrap">ДЕСКТОПНІ ДОДАТКИ</h3>
@@ -136,7 +201,7 @@
 								<img
 									src="./images/img-laptop.jpg"
 									alt="ноутбук"
-									width="370"
+									width="100%"
 									height="294"
 								/>
 								<h3 class="about-title-wrap">МОБІЛЬНІ ДОДАТКИ</h3>
@@ -147,7 +212,7 @@
 								<img
 									src="./images/img-tablet.jpg"
 									alt="планшет у руках"
-									width="370"
+									width="100%"
 									height="294"
 								/>
 								<h3 class="about-title-wrap">ДИЗАЙНЕРСЬКІ РІШЕННЯ</h3>
@@ -166,7 +231,7 @@
 									class="team-img"
 									src="./images/team-1.jpg"
 									alt="Product Designer"
-									width="270"
+									width="100%"
 									height="260"
 								/>
 								<div class="team__discription">
@@ -209,7 +274,7 @@
 									class="team-img"
 									src="./images/team-2.jpg"
 									alt="Product Designer"
-									width="270"
+									width="100%"
 									height="260"
 								/>
 								<div class="team__discription">
@@ -252,7 +317,7 @@
 									class="team-img"
 									src="./images/team-3.jpg"
 									alt="Product Designer"
-									width="270"
+									width="100%"
 									height="260"
 								/>
 								<div class="team__discription">
@@ -295,7 +360,7 @@
 									class="team-img"
 									src="./images/team-4.jpg"
 									alt="Product Designer"
-									width="270"
+									width="100%"
 									height="260"
 								/>
 								<div class="team__discription">
@@ -385,7 +450,7 @@
 				</div>
 			</section>
 		</main>
-		<!-- <footer class="footer">
+		<footer class="footer">
 			<div class="footer-container container">
 				<div class="footer-info">
 					<a class="footer-logo link" href="./index.html"
@@ -465,9 +530,9 @@
 					</form>
 				</div>
 			</div>
-		</footer> -->
-		<!-- <div data-modal class="backdrop is-hidden">
-			<div class="modal">
+		</footer>
+		<div data-modal class="backdrop is-hidden">
+			<div class="modal container">
 				<button data-modal-close type="button" class="modal-close">
 					<svg class="modal-close-icon" width="18" height="18">
 						<use href="./images/icons.svg#icon-close-modal"></use>
@@ -552,6 +617,7 @@
 			</div>
 		</div>
 
-		<script src="./js/modal.js"></script> -->
+		<script src="./js/modal.js"></script>
+		<script src="./js/menu.js"></script>
 	</body>
 </html>

@@ -19,25 +19,24 @@
 	width: 100%;
 	@media screen and (min-width: 768px) {
 		width: calc((100% - 30px) / 2);
+		min-height: 536px;
 	}
 	@media screen and (min-width: 1200px) {
 		width: calc((100% - 90px) / 4);
+		min-height: 428px;
 	}
 }
 
 .team__discription {
 	padding-top: 30px;
-	margin-bottom: 24px;
-		@media screen and (min-width: 1200px) {
-		margin-bottom: 30px;
-	}
+	margin-bottom: 16px;
 }
 
 .our-team__title {
 	margin-bottom: 30px;
-			@media screen and (min-width: 1200px) {
+	@media screen and (min-width: 1200px) {
 		margin-bottom: 50px;
-}
+	}
 }
 
 .title {
@@ -50,11 +49,8 @@
 	max-height: 622px;
 	border-color: #757575;
 	padding-bottom: 24px;
-	@media screen and (min-width: 768px) {
-		min-height: 536px;
-	}
+
 	@media screen and (min-width: 1200px) {
-		min-height: 428px;
 		padding-bottom: 30px;
 	}
 
