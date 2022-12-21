@@ -14,19 +14,48 @@
 	}
 	@media screen and (min-width: 768px) {
 		max-width: 768px;
-		display: flex;
 	}
 	@media screen and (min-width: 1200px) {
 		max-width: 1200px;
+		display: flex;
+		align-content: center;
+		align-items: baseline;
+	}
+}
+
+.footer-wrap {
+	display: block;
+	@include tablet {
+		display: flex;
+		align-items: baseline;
+		justify-content: space-around;
+		margin-bottom: 60px;
+	}
+	@include desktop {
+		display: flex;
+		margin-bottom: 0;
 	}
 }
 
 .footer-info {
+	@include tablet {
+		margin: 0;
+		display: block;
+		max-width: 232px;
+		margin-right: 165px;
+	}
+		@include desktop {
+		display: block;
+		min-width: 231px;
+		margin-right: 70px;
+		margin-bottom: 0;
+	}
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	width: 100%;
 	margin-bottom: 60px;
+
 }
 
 .footer-logo {
@@ -38,8 +67,11 @@
 	margin-bottom: 20px;
 	color: var(--pimmary-white-color);
 	font-family: Raleway;
-		@include desktop {
+	@include desktop {
 		@include font(null, 26px, 1.19, 0.03em);
+		margin: 0;
+		margin-bottom: 20px;
+		text-align: left;
 	}
 }
 
@@ -64,7 +96,11 @@
 }
 
 .address-list > .item {
-	margin-bottom: 9px;
+	@include desktop {
+		margin-bottom: 9px;
+		text-align: left;
+	}
+	margin-bottom: 8px;
 	text-align: center;
 }
 
@@ -91,6 +127,9 @@
 	margin: auto;
 	@include font(700, 14px, 1.1428, 0.03em);
 	margin-bottom: 20px;
+	@include desktop {
+		text-align: left;
+	}
 }
 
 .footer-soc {
@@ -99,6 +138,11 @@
 	align-items: center;
 	justify-content: center;
 	margin-bottom: 60px;
+	@include desktop {
+		margin-bottom: 0;
+		margin-top: 12px;
+		margin-right: 93px;
+	}
 }
 
 .footer-soc-list {
@@ -150,6 +194,9 @@
 .footer-form {
 	margin-top: 12px;
 	width: 100%;
+		@include tablet {
+		margin-top: 0;
+	}
 }
 
 .fotter-form-form {
@@ -158,6 +205,9 @@
 	gap: 12px;
 	flex-direction: column;
 	align-items: center;
+	@include desktop {
+		flex-direction: row;
+	}
 }
 
 .footer-textarea-label {
@@ -167,11 +217,17 @@
 	display: block;
 	margin-bottom: 20px;
 	color: var(--pimmary-white-color);
+	@include desktop {
+		text-align: left;
+	}
 }
 
 .footer-subscribe {
-	@include tablet {
-		max-width: 450px
+		@include tablet {
+		max-width: 450px;
+	}
+	@include desktop {
+		max-width: 358px;
 	}
 	@include font(400, 16px, 1.25, 0.03em);
 	display: flex;
