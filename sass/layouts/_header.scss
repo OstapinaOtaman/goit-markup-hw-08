@@ -13,7 +13,7 @@
 		padding-bottom: 0;
 	}
 	@include desktop {
-		padding-top: 24px;
+		padding-top: 0;
 		padding-bottom: 0;
 		width: 100%;
 		max-width: 1200px;
@@ -55,6 +55,7 @@
 		font-family: Raleway;
 		@include font(700, 26px, 1.1923, 0.03em);
 		margin-right: 93px;
+		margin-top: 24px;
 	}
 
 	color: var(--primary-text-color);
@@ -93,7 +94,9 @@
 	@include desktop {
 		margin-right: 318px;
 		display: block;
+		margin-top: 0;
 	}
+
 }
 
 .menu__list {
@@ -124,6 +127,9 @@
 }
 
 .menu__link {
+	@include desktop {
+		padding-bottom: 28px;
+	}
 	color: var(--primary-text-color);
 	padding-bottom: 32px;
 	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);

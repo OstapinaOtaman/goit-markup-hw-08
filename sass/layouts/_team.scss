@@ -19,7 +19,7 @@
 	width: 100%;
 	@media screen and (min-width: 768px) {
 		width: calc((100% - 30px) / 2);
-		min-height: 536px;
+		// min-height: 536px;
 	}
 	@media screen and (min-width: 1200px) {
 		width: calc((100% - 90px) / 4);
@@ -34,13 +34,14 @@
 
 .our-team__title {
 	margin-bottom: 30px;
+	@include font(700, 28px, 1.178, 0.03em);
 	@media screen and (min-width: 1200px) {
 		margin-bottom: 50px;
+		@include font(700, 36px, 1.166, 0.03em);
 	}
 }
 
 .title {
-	@include font(null, 36px, 1.16, 0.03em);
 	text-align: center;
 }
 
@@ -49,6 +50,9 @@
 	max-height: 622px;
 	border-color: #757575;
 	padding-bottom: 24px;
+	// @include tablet {
+	// 	min-height: 536px;
+	// }
 
 	@media screen and (min-width: 1200px) {
 		padding-bottom: 30px;
